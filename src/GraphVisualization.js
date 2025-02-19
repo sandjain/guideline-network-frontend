@@ -5,7 +5,7 @@ const GraphVisualization = () => {
   const [graphData, setGraphData] = useState({ nodes: [], links: [] });
 
   useEffect(() => {
-    fetch("https://ascoguidelineauthors.onrender.com")
+    fetch("https://ascoguidelineauthors.onrender.com/graph")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched Graph Data:", data); // Debugging
